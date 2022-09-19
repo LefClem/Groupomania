@@ -5,7 +5,7 @@ const config = {
     host: 'localhost',
     user: 'root',
     password: process.env.DB_PASSWORD,
-    database: 'Training'
+    database: 'Groupomania'
 }
 
 const connection = mysql.createConnection(config);

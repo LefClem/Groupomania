@@ -1,9 +1,7 @@
 const express = require('express');
-// const mysql = require('mysql');
 const app = express();
-// const db = require('./db.mysql');
 require('dotenv').config();
-const userRoutes = require('./routes/user');
+const userRoutes = require('./routes/auth');
 const postRoutes = require('./routes/post');
 
 
