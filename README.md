@@ -5,10 +5,10 @@ Bonjour et bienvenue sur le dernier projet de la formation OpenClassrooms du par
 Vous êtes développeur depuis plus d'un an chez CONNECT-E, une petite agence web regroupant une douzaine d'employés. Votre directrice, Stéphanie, vient de signer un nouveau contrat avec Groupomania, un groupe spécialisé dans la grande distribution, et l'un des plus fidèles clients de l'agence. 
 Le projet consiste à construire un réseau social interne pour les employés de Groupomania. Le but de cet outil est de faciliter les interactions entre collègues. Le département RH de Groupomania a imaginé plusieurs fonctionnalités pour favoriser les échanges entre collègues.
 
-FONCTIONNALITÉS
+FONCTIONNALITÉES
 
 Sur le site, vous avez la possibilité de:
-- Créer un compte à l’aide de votre nom ou pseudo ainsi qu’un mail et un mot de passe de votre choix
+- Créer un compte à l’aide de votre nom/pseudo ainsi qu’un mail et un mot de passe de votre choix
 - Postez des images ou un texte sous forme de post
 - Liker les posts
 - Modifier ou supprimer les posts que vous avez créer
@@ -48,7 +48,7 @@ Entrer les commandes suivantes:
 CREATE DATABASE groupomania;
 USE groupomania;
 
-Importer ensuite le fichier de la base donnée groupomania.sql avec la commande suivant:
+Importer ensuite le fichier de la base donnée groupomania.sql avec la commande suivante:
 source (copier le chemin d’accès vers le fichier groupamnia.sql et le coller ici sans parenthèse)
 
 BACKEND
