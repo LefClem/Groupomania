@@ -30,7 +30,7 @@ GIT
 
 Créer un dossier vide du nom de votre choix et utiliser la commande git clone dans votre terminal à l’intérieur de votre dossier:
 
-Git clone https://github.com/LefClem/Groupomania.git
+- Git clone https://github.com/LefClem/Groupomania.git
 
 MYSQL
 
@@ -45,8 +45,8 @@ Ouvrez MySql via votre terminal avec la commande suivante:
 et entrer votre mot de passe.
 
 Entrer les commandes suivantes:
-CREATE DATABASE groupomania;
-USE groupomania;
+- CREATE DATABASE groupomania;
+- USE groupomania;
 
 Importer ensuite le fichier de la base donnée groupomania.sql avec la commande suivante:
 source (copier le chemin d’accès vers le fichier groupamnia.sql et le coller ici sans parenthèse)
@@ -54,14 +54,14 @@ source (copier le chemin d’accès vers le fichier groupamnia.sql et le coller 
 BACKEND
 
 Ouvrir le terminal dans le dossier backend puis écrire les commandes suivantes:
-npm install
-npm run start
+- npm install
+- npm run start
 
 FRONTEND
 
 Ouvrir le terminal dans le dossier backend puis écrire les commandes suivantes:
-npm install
-npm run serve
+- npm install
+- npm run serve
 
 Lorsque le serveur est lancé, accéder au navigateur à l’adresse http://localhost:8080/
 
@@ -70,7 +70,7 @@ MODÉRATION
 Le site comprend un compte admin pour la modération des posts. L’admin possède un droit de modification et de suppression de l’ensemble des posts de la plateforme.
 
 Voici les accès:
-admin@mail.com
-Moderation2022!
+- admin@mail.com
+- Moderation2022!
 
 À très vite sur le site !
