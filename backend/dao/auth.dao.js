@@ -48,7 +48,7 @@ class UserModels {
               admin: results[0].admin,
               token: jwt.sign(
                 { userId: results[0].id, admin: results[0].admin },
-                process.env.SECRET_TOKEN,
+                "Phudizhaduaiohuloh6786782GGYsugé§èS27TS8627",
                 { expiresIn: "24H" }
               ),
             });

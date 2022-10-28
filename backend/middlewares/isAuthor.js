@@ -4,7 +4,7 @@ require('dotenv').config();
 
 module.exports = (req, res, next) => {
     try {
-        const userId = jwt.decode(req.headers.authorization.split(' ')[1], process.env.SECRET_TOKEN).userId;
+        const userId = jwt.decode(req.headers.authorization.split(' ')[1], "Phudizhaduaiohuloh6786782GGYsugé§èS27TS8627").userId;
         const id = req.params.id;
         console.log(typeof(req.auth.admin));
         
