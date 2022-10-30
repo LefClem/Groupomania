@@ -22,5 +22,3 @@ module.exports = (req, res, next) => {
     }
 
 }
-
-// results[0].user_id == userId || 

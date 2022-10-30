@@ -1,4 +1,3 @@
-const { JsonWebTokenError } = require("jsonwebtoken");
 const db = require("../db.mysql");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
@@ -16,14 +15,13 @@ class UserModels {
         if (email === undefined) {
             db.query(sql, user, (err, results) => {
             try {
-              if (err) console.log(err);
+              if (err) throw(err);
               resolve(results);
             } catch (error) {
               throw error;
             }
           });
         } else if(email.email){
-            console.log(results[0].email);
           return resolve(results);
         }
       });
@@ -34,8 +32,6 @@ class UserModels {
     let sql = `SELECT * FROM User WHERE email = ?`;
     return new Promise((resolve, reject) => {
       db.query(sql, [email, password], async (err, results) => {
-        // if(err) reject( {err} );
-        console.log(results);
         if (results == 0) {
           reject({ message: "Utilisateur introuvable !" });
         } else {
@@ -72,18 +68,13 @@ class UserModels {
   }
 
   updateProfilePicture(id, file){
-    let sqlSearch = "SELECT * FROM user WHERE id = ?";
-    let sqlInsert = "INSERT INTO user VALUES profile_picture = ?";
     let sql = 'UPDATE user SET profile_picture = ? WHERE id = ?';
     return new Promise((resolve) => {
-      // db.query(sqlSearch, id, (err, results) => {
-      //   resolve( results );
           db.query(sql, [file, id], (err, results) => {
             try {
-              if(err) console.log(err);
+              if(err) throw err;
               resolve(results);
             } catch (error) {
-              console.log(error);
               reject(error);
             }
           })

@@ -28,8 +28,6 @@ class PostsModels {
         return new Promise((resolve) => {
             db.query(sql, sqlData, (err, results) => {
                 if (err) throw err;
-                console.log(typeof(results.insertId));
-                console.log(results.insertId);
                 db.query(sqlSearch, results.insertId, (err, results) => {
                     resolve(results);
                 })

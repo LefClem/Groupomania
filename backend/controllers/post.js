@@ -1,7 +1,5 @@
-const jwt = require('jsonwebtoken');
 const fs = require('fs');
 const PostsModels = require('../dao/post.dao');
-const { post } = require('../app');
 require('dotenv').config();
 
 let postsModels = new PostsModels();
@@ -73,13 +71,11 @@ exports.deletePost = async (req, res) => {
 
     try {
         let post = await postsModels.getOnePost(req.params.id);
-        console.log(post);
         if (post[0].image_url !== '') {
             await postsModels.deletePost(req.params.id);
             const filename = post[0].image_url.split('/images/post/')[1];
             fs.unlink(`images/post/${filename}`, (err) => {
                 if (err) {
-                    console.log(err);
                     throw err;
                 } else {
                     console.log("image supprimée !");
@@ -111,11 +107,9 @@ exports.likePost = async (req,res) => {
     try {
         let userId = req.auth.id;
         let postId = Number(req.params.id);
-        console.log(userId);
         let like = await postsModels.likePost(postId, userId)
         res.status(201).json({like})
     } catch (error) {
-        console.log(error);
         res.status(400).json({ error })
     }
 }

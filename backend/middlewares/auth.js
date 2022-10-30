@@ -13,7 +13,6 @@ module.exports = (req, res, next) => {
     };
     next();
   } catch (error) {
-    console.log("Erreur middleware: " + error);
     res.status(401).json({ error });
   }
 };

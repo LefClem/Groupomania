@@ -1,6 +1,4 @@
-const mysql = require("../db.mysql");
 const bcrypt = require("bcrypt");
-const jwt = require("jsonwebtoken");
 const UserModels = require("../dao/auth.dao");
 require("dotenv").config();
 
@@ -19,6 +17,9 @@ exports.signup = async (req, res) => {
       : {
           ...req.body,
           password: await bcrypt.hash(req.body.password, 10),
+          profile_picture: `${req.protocol}://${req.get(
+            "host"
+          )}/images/default/istockphoto-1223671392-170667a.jpeg`
         };
 
     if (!user.name || !user.email || !user.password) {
