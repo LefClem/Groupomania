@@ -147,8 +147,8 @@ export default {
       }
     },
     formatDate(date) {
-      var datePart = date.match(/\d+/g),
-        year = datePart[0].substring(2), // get only two digits
+      const datePart = date.match(/\d+/g),
+        year = datePart[0].substring(2), 
         month = datePart[1],
         day = datePart[2],
         hour = datePart[3],

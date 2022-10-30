@@ -22,7 +22,6 @@ export default {
   min-height: 100vh;
   width: 100%;
   box-sizing: border-box;
-  /* background: #ffd7d7; */
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */

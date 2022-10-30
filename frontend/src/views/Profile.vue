@@ -39,8 +39,12 @@ export default {
             console.log(this.picture);
         },
         async getUser(){
+            if (!this.connect) {
+                this.$router.push("/");
+            } else {
             let loggedUser = await UserMethods.getUser(this.connect.user_id, this.connect.token)
             this.user = loggedUser.data.user[0];
+            }
         },
         async changeProfilePicture(){
             try {
