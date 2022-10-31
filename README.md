@@ -5,7 +5,7 @@ Bonjour et bienvenue sur le dernier projet de la formation OpenClassrooms du par
 Vous êtes développeur depuis plus d'un an chez CONNECT-E, une petite agence web regroupant une douzaine d'employés. Votre directrice, Stéphanie, vient de signer un nouveau contrat avec Groupomania, un groupe spécialisé dans la grande distribution, et l'un des plus fidèles clients de l'agence. 
 Le projet consiste à construire un réseau social interne pour les employés de Groupomania. Le but de cet outil est de faciliter les interactions entre collègues. Le département RH de Groupomania a imaginé plusieurs fonctionnalités pour favoriser les échanges entre collègues.
 
-FONCTIONNALITÉES
+FONCTIONNALITÉS
 
 Sur le site, vous avez la possibilité de:
 - Créer un compte à l’aide de votre nom/pseudo ainsi qu’un mail et un mot de passe de votre choix
