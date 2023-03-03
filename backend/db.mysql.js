@@ -2,10 +2,10 @@ const mysql = require('mysql');
 require('dotenv').config();
 
 const config = {
-    host: '127.0.0.1',
+    host: 'containers-us-west-75.railway.app',
     user: process.env.DB_USER,
     password: process.env.DB_PASSWORD,
-    database: 'groupomania'
+    database: 'railway'
 }
 
 const connection = mysql.createConnection(config);
